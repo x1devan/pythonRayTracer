@@ -1,7 +1,7 @@
 import unittest
 from vector import Vector
 
-#           
+#
 
 class TestVectors(unittest.TestCase):
     def setUp(self):
