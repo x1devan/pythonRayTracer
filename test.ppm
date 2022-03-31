@@ -1,0 +1,14 @@
+# Next line says "P3" defining the image format,
+# then the number of columns and rows
+# Aka P3 means it has 3 color values
+# 3 means it has 3 columns, 2 means it has 2 rows
+
+P3 3 2
+
+# Finally the maximum color value
+255
+
+#The part below is the imagae data: RGB triplets
+255   0   0       0   255   0   0   0 255
+255 255 255     255   255 255   0   0   0
+# Fin!  
