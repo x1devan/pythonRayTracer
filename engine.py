@@ -1,3 +1,4 @@
+from color import Color
 from image import Image
 from point import Point
 from ray import Ray
@@ -36,4 +37,18 @@ class RenderEngine:
             return color
         hit_pos = ray.origin + ray.direction * dist_hit
 
-        color +=
+        color += self.color_at(obj_hit, hit_pos, scene)
+        return color
+
+    def find_nearest(self, ray, scene):
+        dist_min = None
+        obj_hit = None
+        for obj in scene.objects:
+            dist = obj.intersects(ray)
+            if dist is not None and (obj_hit is None or dist < dist_min):
+                dist_min = dist
+                obj_hit = obj
+        return (dist_min, obj_hit)
+
+    def color_at(self, obj_hit, hit_pos, scene):
+        return obj_hit.material
