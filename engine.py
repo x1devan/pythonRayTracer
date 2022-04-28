@@ -27,6 +27,7 @@ class RenderEngine:
                 x = x0 + i * xstep
                 ray = Ray(camera, Point(x, y) - camera)
                 pixels.set_pixel(i, j, self.ray_trace(ray, scene))
+            # Prints out a progress bar for rendering the image   
             print("{:3.0f}%".format(float(j)/float(height) * 100 ), end="\r")
         print("Done")
         return pixels
