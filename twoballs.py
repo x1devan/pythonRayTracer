@@ -7,7 +7,7 @@ from vector import Vector
 
 WIDTH = 320
 HEIGHT = 200
-RENDERED_IMG = "2balls.ppm"
+RENDERED_IMG = "twoballs.ppm"
 CAMERA = Vector(0, -0.35, -1)
 OBJECTS = [
 
@@ -16,8 +16,8 @@ OBJECTS = [
         Point(0, 10000.5, 1),
         10000.0, 
         ChequeredMaterial(
-            color1=Color.from_hex("#420500"),
-            color2=Color.from_hex("e6b87d"),
+            color1=Color.from_hex("#AFFF00"),
+            color2=Color.from_hex("#0F6FFF"),
             ambient=0.2,
             reflection=0.2
         ),
