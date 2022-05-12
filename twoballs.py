@@ -5,9 +5,9 @@ from point import Point
 from sphere import Sphere
 from vector import Vector
 
-WIDTH = 320
-HEIGHT = 200
-RENDERED_IMG = "twoballs.ppm"
+WIDTH = 3840
+HEIGHT = 2160
+RENDERED_IMG = "twoballs3.ppm"
 CAMERA = Vector(0, -0.35, -1)
 OBJECTS = [
 
